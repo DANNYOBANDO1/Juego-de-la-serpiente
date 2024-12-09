@@ -1,13 +1,16 @@
-"""# Pantalla del videojuego
-screen = screen()
-screen.setup(width=600, height=600)
-screen.bgcolor("negro")
-screen.title("el juego de la serpiente")
-screen.tracer(0) """
+import turtle
+import time 
+import random
 
-# Pantalla
-screen = Screen()
-screen.setup(width=1920, height=1080)
-screen.bgcolor("black")
-screen.title("My Snake Game")
-screen.tracer(0)
+posponer = 0.1
+
+score = 0
+high_score = 0
+
+#configuracion de la ventana
+wn = turtle.Screen()
+wn.title("juego de la serpiente")
+wn.bgcolor("black")
+wn.setup(width=600,height=600)
+wn.tracer(0)
+
